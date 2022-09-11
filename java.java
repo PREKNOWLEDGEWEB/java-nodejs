@@ -35,7 +35,7 @@ public class java extends Application
         final WebEngine webEngine = webView.getEngine();
         // Load the StartPage
         if(parameters.isEmpty() == true){
-            webEngine.load("https://google.com");
+            webEngine.load("https://example.com");
         }else{
             webEngine.load(parameters.get(0));
         }
