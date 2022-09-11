@@ -1,0 +1,11 @@
+{
+  "name":"test",
+  "bin":"index.js",
+  "dependencies": {
+    "pkg": "^5.8.0"
+  },
+  "scripts":{
+    "compile":"javac java.java",
+    "pkg":"pkg . --target=node16-win-x64"
+  }
+}
