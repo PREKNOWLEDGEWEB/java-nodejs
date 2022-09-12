@@ -6,14 +6,18 @@ Currently No Name Yeah No Name
 ```bash
 g++ hideconsole.cpp -o hide.exe
 ```
+## Step 2 :Compile hideconsole.cpp
+```bash
+g++ showconsole.cpp -o show.exe
+```
 (Consider Using g++(mingw) instead of msys2)
 
-## Step 2 : Compile java.java
+## Step 3 : Compile java.java
 (You Must Have JDK Installed for this)
 ```bash
 npm run compile
 ```
-## Step 3 Compile Executable
+## Step 4 Compile Executable
 ```bash
 npm run pkg
 ```
