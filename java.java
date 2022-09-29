@@ -4,6 +4,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.FontSmoothingType;
+import javafx.scene.image.Image;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -26,7 +27,7 @@ public class java extends Application
         final List<String> parameters = params.getRaw();
          
         // Disable the context menu
-        webView.setContextMenuEnabled(true);
+        webView.setContextMenuEnabled(false);
          
         // Set font smoothing type to GRAY
         webView.setFontSmoothingType(FontSmoothingType.GRAY);
@@ -57,7 +58,7 @@ public class java extends Application
             public void changed(ObservableValue<? extends String> ov,
                     final String oldvalue, final String newvalue) 
             {
-                stage.setTitle("Loading..........");
+                
             }
         });
          
@@ -77,7 +78,8 @@ public class java extends Application
         // Create the Scene
         Scene scene = new Scene(root);
         // Add  the Scene to the Stage
-
+        stage.setResizable(false);
+        stage.getIcons().add(new Image("icon/icon.ico"));
         //if(parameters.get(1) == "no-decor"){
         //stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);

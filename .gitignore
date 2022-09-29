@@ -1,5 +1,4 @@
 target/
-bin/
 !.mvn/wrapper/maven-wrapper.jar
 node_modules
 
@@ -27,3 +26,5 @@ dist/
 nbdist/
 .nb-gradle/
 target/
+
+jre/
